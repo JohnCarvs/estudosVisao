@@ -1,3 +1,9 @@
+# Autor: João Vitor de Carvalho Silva
+#
+# Descrição: O código usa um modelo de visão, o yolov8 para
+#   fazer detecção de objetos em uma entrada de webcam.
+# #------------------------------------------------------------------
+
 import random
 from random import randint
 import math
@@ -32,8 +38,8 @@ model.info()
 print( model.names)
 
 #Configurar camera input
-#camera = cv2.VideoCapture(0) #Webcam
-camera = cv2.VideoCapture("../videos/bikes.mp4") #Videos
+camera = cv2.VideoCapture(0) #Webcam
+#camera = cv2.VideoCapture("../videos/ppe-3-1.mp4") #Videos
 camera.set(3,1280)
 camera.set(4, 720)
 
